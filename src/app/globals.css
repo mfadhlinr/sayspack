@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Palet: tinta sablon (navy) di atas putih kertas; teal = cup PET jernih. */
+@theme {
+  --color-ink: #13294b;
+  --color-ink-soft: #3d5170;
+  --color-paper: #f4f6f9;
+  --color-line: #dde3ea;
+  --color-teal: #0b7a75;
+  --color-teal-soft: #e3f2f1;
+  --color-plus: #15803d;
+  --color-minus: #b91c1c;
+  --color-warn: #b45309;
+  --color-warn-soft: #fdf3e4;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html { color-scheme: light; }
+body { background: var(--color-paper); color: var(--color-ink); font-feature-settings: "tnum" 0; }
+.num { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 2px solid var(--color-teal); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
